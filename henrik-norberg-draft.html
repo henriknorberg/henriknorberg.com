@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Henrik Norberg — Meditation Teacher & Cave Yogi</title>
+<meta name="description" content="Henrik Norberg is a certified The Mind Illuminated meditation teacher, cave yogi, and practitioner of samadhi, jhana, insight meditation, and wilderness Dharma.">
+<meta name="keywords" content="Henrik Norberg, The Mind Illuminated teacher, TMI meditation, Culadasa, samadhi, jhana, meditation retreat, wilderness meditation, cave yogi">
+<style>
+  :root {
+    --paper: #f1eee6;
+    --ink: #111;
+    --line: #111;
+    --muted: #625f58;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  .site {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 22px 28px 70px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid var(--line);
+    padding-bottom: 16px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+  }
+
+  nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    min-height: 82vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7vh 0 35px;
+  }
+
+  .eyebrow {
+    font-family: "Courier New", monospace;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: clamp(72px, 12vw, 190px);
+    line-height: .82;
+    letter-spacing: -.075em;
+    margin: 0;
+    font-weight: 900;
+    max-width: 1100px;
+  }
+
+  .hero-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: end;
+  }
+
+  .hero-statement {
+    font-size: clamp(28px, 4vw, 60px);
+    line-height: .98;
+    letter-spacing: -.04em;
+    max-width: 700px;
+  }
+
+  .hero-note {
+    max-width: 430px;
+    justify-self: end;
+  }
+
+  .section {
+    border-top: 2px solid var(--line);
+    padding: 55px 0 100px;
+  }
+
+  .section-grid {
+    display: grid;
+    grid-template-columns: 28% 1fr;
+    gap: 50px;
+  }
+
+  .section-label {
+    font-family: "Courier New", monospace;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: clamp(48px, 7vw, 105px);
+    line-height: .9;
+    letter-spacing: -.065em;
+    margin: 0 0 35px;
+  }
+
+  p {
+    max-width: 720px;
+  }
+
+  .big-copy {
+    font-size: clamp(26px, 3.2vw, 48px);
+    line-height: 1.05;
+    letter-spacing: -.035em;
+  }
+
+  .topics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 2px solid var(--line);
+  }
+
+  .topic {
+    padding: 25px 20px 45px 0;
+    border-bottom: 2px solid var(--line);
+  }
+
+  .topic:nth-child(odd) {
+    border-right: 2px solid var(--line);
+    padding-right: 35px;
+  }
+
+  .topic:nth-child(even) {
+    padding-left: 35px;
+  }
+
+  .topic-number {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+  }
+
+  .topic h3 {
+    font-size: clamp(30px, 4vw, 55px);
+    line-height: .95;
+    margin: 30px 0 15px;
+    letter-spacing: -.05em;
+  }
+
+  .manifesto {
+    font-size: clamp(52px, 8vw, 125px);
+    line-height: .86;
+    letter-spacing: -.075em;
+    font-weight: 900;
+    max-width: 1200px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: end;
+  }
+
+  footer {
+    border-top: 2px solid var(--line);
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  .photo-placeholder {
+    margin-top: 45px;
+    height: 360px;
+    background:
+      linear-gradient(135deg, #292823 0%, #555047 48%, #9a917f 49%, #c7bca7 100%);
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    color: var(--paper);
+    font-family: "Courier New", monospace;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  @media (max-width: 760px) {
+    .site { padding: 16px 18px 50px; }
+
+    header { display: block; }
+    nav { margin-top: 14px; gap: 15px; }
+
+    .hero { min-height: 78vh; padding-top: 10vh; }
+
+    .hero-bottom,
+    .section-grid,
+    .contact {
+      grid-template-columns: 1fr;
+      display: grid;
+    }
+
+    .hero-note { justify-self: start; }
+
+    .section-grid { gap: 25px; }
+
+    .topics { grid-template-columns: 1fr; }
+
+    .topic:nth-child(odd) {
+      border-right: 0;
+      padding-right: 0;
+    }
+
+    .topic:nth-child(even) { padding-left: 0; }
+
+    .photo-placeholder { height: 240px; }
+  }
+</style>
+</head>
+
+<body>
+<div class="site">
+
+<header>
+  <div>HN / 2026</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#practice">Practice</a>
+    <a href="#wilderness">Wilderness</a>
+    <a href="#retreats">Retreats</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="eyebrow">Meditation teacher / Cave yogi / Mind explorer</div>
+
+  <h1>HENRIK<br>NORBERG</h1>
+
+  <div class="hero-bottom">
+    <div class="hero-statement">
+      Deep meditation.<br>
+      Wild places.<br>
+      Early Buddhism.
+    </div>
+
+    <div class="hero-note">
+      <p>
+        Meditation instruction rooted in The Mind Illuminated,
+        samadhi, jhana, insight practice, and the contemplative
+        traditions of early Buddhism.
+      </p>
+      <p>
+        <a href="#practice">Explore the practice ↓</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-grid">
+    <div class="section-label">01 / About</div>
+
+    <div>
+      <h2>CAVE<br>YOGI.</h2>
+
+      <p class="big-copy">
+        Henrik Norberg is a meditation teacher, cave yogi,
+        wanderer, and mind explorer.
+      </p>
+
+      <p>
+        Henrik is a certified teacher of <strong>The Mind Illuminated (TMI)</strong>.
+        He was personally trained and instructed by
+        <strong>Culadasa (John Yates)</strong> at Dharma Treasure Retreat Center.
+      </p>
+
+      <p>
+        His practice is particularly interested in pre-sectarian Buddhism,
+        samadhi, concentration, jhana, insight meditation, and the direct
+        investigation of experience.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="practice">
+  <div class="section-grid">
+    <div class="section-label">02 / Practice</div>
+
+    <div>
+      <h2>TRAIN<br>THE MIND.</h2>
+
+      <div class="topics">
+        <article class="topic">
+          <div class="topic-number">01</div>
+          <h3>The Mind Illuminated</h3>
+          <p>
+            A systematic approach to developing stable attention,
+            overcoming distraction, and progressing through the stages
+            of meditation practice.
+          </p>
+        </article>
+
+        <article class="topic">
+          <div class="topic-number">02</div>
+          <h3>Samadhi</h3>
+          <p>
+            Concentration, unification of mind, pleasure, stability,
+            and the conditions that allow deeper meditative states to emerge.
+          </p>
+        </article>
+
+        <article class="topic">
+          <div class="topic-number">03</div>
+          <h3>Jhana</h3>
+          <p>
+            Exploring the absorption practices described in early Buddhist
+            traditions alongside contemporary approaches to meditation.
+          </p>
+        </article>
+
+        <article class="topic">
+          <div class="topic-number">04</div>
+          <h3>Insight</h3>
+          <p>
+            Using a concentrated mind to investigate experience directly:
+            impermanence, craving, identification, and the construction of self.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="wilderness">
+  <div class="section-grid">
+    <div class="section-label">03 / Wilderness Dharma</div>
+
+    <div>
+      <h2>DHARMA<br>IN THE WILD.</h2>
+
+      <p class="big-copy">
+        Sometimes the fastest way to see the mind is to remove
+        everything that normally distracts it.
+      </p>
+
+      <p>
+        Caves, mountains, deserts, forests, solitude and long periods
+        without screens create a different context for meditation.
+        Wilderness practice is not an escape from Dharma. It is a laboratory
+        for investigating the mind.
+      </p>
+
+      <div class="photo-placeholder">
+        Image: cave / desert / mountain practice
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="retreats">
+  <div class="section-grid">
+    <div class="section-label">04 / Retreats</div>
+
+    <div>
+      <h2>GO<br>DEEPER.</h2>
+
+      <p class="big-copy">
+        Meditation retreats for people who want more than
+        twenty minutes of mindfulness.
+      </p>
+
+      <p>
+        Extended periods of silence and practice, with instruction in
+        concentration meditation, TMI, samadhi, insight, and wilderness Dharma.
+      </p>
+
+      <p>
+        <a href="#">View upcoming retreats →</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="manifesto">
+    MEDITATION FOR PEOPLE WHO WANT TO KNOW WHAT THE MIND ACTUALLY DOES.
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="contact">
+    <div>
+      <div class="section-label">05 / Contact</div>
+      <h2>LET'S<br>TALK.</h2>
+    </div>
+
+    <div>
+      <p>
+        Questions about meditation, TMI, retreats, or wilderness practice?
+      </p>
+      <p><a href="mailto:hello@example.com">hello@example.com →</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div>Henrik Norberg</div>
+  <div>Meditation / Samadhi / Wilderness</div>
+</footer>
+
+</div>
+</body>
+</html>

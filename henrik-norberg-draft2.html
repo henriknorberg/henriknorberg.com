@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meditation training for a wild life. Teaching, retreats and writings by Henrik Norberg.">
+  <title>Henrik Norberg — Meditation Teacher</title>
+<link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#">Henrik A. Norberg<br>Meditation Teacher and Cave Yogi</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#teaching">Teaching</a>
+      <a href="#retreats">Retreats</a>
+      <a href="#writings">Writings</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu" aria-label="Open menu" onclick="document.body.classList.toggle('menu-open')">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-image" src="henrikblurnorway.jpg" alt="Mountain landscape with a backpacker overlooking a lake">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="display">Stay<br>Wild &<br>Awake</h1>
+          <div class="hero-kicker">Rediscovering early Buddhist practises.
+          </div>
+        </div>
+        <div class="hero-note">Rooted in the wisdom tradition.<br>Applied to real life.<br><br>— HN</div>
+      </div>
+    </section>
+
+    <section class="location-bar">
+      <div>Teaching online &amp;<br>in the mountains</div>
+      <div class="coords">62.0000° N, 7.0000° E <span class="arrow">↗</span></div>
+    </section>
+
+    <section class="intro" id="about">
+      <h2>I teach meditation as a practice of awareness, discipline and compassion.</h2>
+      <div>
+        <p>My approach is grounded in the Buddha's teachings and the training model of The Mind Illuminated.</p>
+        <p>The goal is not escape — but freedom in the midst of life.</p>
+      </div>
+    </section>
+
+    <section class="cards" aria-label="Explore">
+      <a class="card" id="teaching" href="#">
+        <div class="icon">⌁</div>
+        <h3>Teaching</h3>
+        <p>Principles, methods and stages of meditation training.</p>
+        <span class="arrow">→</span>
+      </a>
+      <a class="card" id="retreats" href="#">
+        <div class="icon">△</div>
+        <h3>Retreats</h3>
+        <p>Immersive retreats in the mountains and online.</p>
+        <span class="arrow">→</span>
+      </a>
+      <a class="card" id="writings" href="#">
+        <div class="icon">▣</div>
+        <h3>Writings</h3>
+        <p>Notes on practice, life and the path.</p>
+        <span class="arrow">→</span>
+      </a>
+      <a class="card" href="#about">
+        <div class="icon">◖</div>
+        <h3>About</h3>
+        <p>Background, values and approach.</p>
+        <span class="arrow">→</span>
+      </a>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <h2>Stay wild.<br>Stay awake.</h2>
+      <p>Reflections on meditation<br>and the natural world.</p>
+      <form class="signup" onsubmit="event.preventDefault(); alert('Thanks — newsletter signup is ready to connect to your email service.');">
+        <input type="email" placeholder="Email address" aria-label="Email address" required>
+        <button aria-label="Subscribe">→</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2026 Henrik Norberg</div>
+    <div class="footer-links">
+      <a href="#">Newsletter</a>
+      <a href="#">Instagram</a>
+      <a href="mailto:hello@example.com">Email</a>
+    </div>
+  </footer>
+</body>
+</html>
